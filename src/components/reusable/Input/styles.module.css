@@ -14,3 +14,9 @@
     border-radius: 5px;
     padding: 0 10px;
 }
+
+.error {
+    margin: 0px;
+    color: rgb(161, 6, 6);
+    font-size: 0.9em;
+}

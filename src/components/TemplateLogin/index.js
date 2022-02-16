@@ -4,6 +4,9 @@ import Input from '../reusable/Input'
 import styles from './styles.module.css'
 
 const Login = () => {
+
+    const data = JSON.parse(localStorage.getItem("data") || "{}")
+    console.log('datos', data);
     return (
         <div className={styles.container}>
             <div className={styles.containerLogo}>

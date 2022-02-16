@@ -1,10 +1,10 @@
 import styles from './styles.module.css'
 
-const Input = ({text, type, idName, placeholder}) => {
+const Input = ({text, type, placeholder, register = ()=> ({}), name, options = {}}) => {
     return (
         <div className={styles.containerInput}>
             <label  className={styles.label} for="name">{text}</label>
-            <input  className={styles.input} type={type} id={idName}  required placeholder={placeholder} ></input>
+            <input {...register(name, options)}  className={styles.input} type={type}   placeholder={placeholder} ></input>
         </div>
     )
 }

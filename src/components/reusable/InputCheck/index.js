@@ -1,9 +1,9 @@
 import styles from './styles.module.css'
 
-const InputCheck = ({text, checked}) => {
+const InputCheck = ({text, checked, name, register = ()=> {}, options={} }) => {
     return (
         <div className={styles.containerInput}>
-            <input type="checkbox" checked={checked} />
+            <input {...register(name, options)} type="checkbox" checked={checked} />
             <label>{text}</label>
         </div>
     )

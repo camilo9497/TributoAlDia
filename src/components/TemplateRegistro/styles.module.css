@@ -5,6 +5,9 @@
     overflow: auto;
     padding: 20px;
 }
+.form {
+    
+}
 .containerTypePerson {
     display: flex;
     margin: 12px 0;

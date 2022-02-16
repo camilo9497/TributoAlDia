@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    height: 45px;
+    padding: 7px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container:last-child {
+    border-bottom: none;
+}

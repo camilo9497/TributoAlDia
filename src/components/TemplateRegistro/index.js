@@ -84,10 +84,14 @@ const TemplateRegistro = () => {
                     {responsableiva &&
                         <div className={styles.containerGroup}>
                             <div className={styles.containerItem}>
-                                <InputCheck text="Responsable de IVA bimestral" register={register} options={{ required: false }} name="responsableivabimestral" />
+                                {/* <InputCheck text="Responsable de IVA bimestral" register={register} options={{ required: false }} name="responsableivabimestral" /> */}
+                                <InputRadio text="Responsable de IVA bimestral" register={register} options={{ required: "Campo requerido" }} name="responsableiva" value="responsableivabimestral" error={errors.responsableiva} />
+
                             </div>
                             <div className={styles.containerItem}>
-                                <InputCheck text="Responsable de IVA cuatrimestral" register={register} options={{ required: false }} name="responsableivacuatrimestral" />
+                                {/* <InputCheck text="Responsable de IVA cuatrimestral" register={register} options={{ required: false }} name="responsableivacuatrimestral" /> */}
+                                <InputRadio text="Responsable de IVA cuatrimestra" register={register} options={{ required: "Campo requerido" }} name="responsableiva" value="responsableivacuatrimestral" error={errors.responsableiva} />
+
                             </div>
                         </div>
                     }

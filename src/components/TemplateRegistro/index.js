@@ -44,7 +44,7 @@ const TemplateRegistro = () => {
                     <Input text="Nombre o razon social" type="text" register={register} name="nombre" options={{ required: "Campo requerido" }} error={errors.nombre} />
                 </div>
                 <div className={styles.containerItem}>
-                    <Input text="Nit o cedula" type="text" register={register} name="nit" options={{ required:  "Campo requerido" }} error={errors.nit}/>
+                    <Input text="Nit o cedula" type="number" register={register} name="nit" options={{ required:  "Campo requerido" }} error={errors.nit}/>
                 </div>
                 <div className={styles.containerItem}>
                     <Input text="Correo" type="text" register={register} name="correo" options={{ required:  "Campo requerido" }} error={errors.correo}/>
@@ -114,10 +114,10 @@ const TemplateRegistro = () => {
                     {exogena &&
                         <div className={styles.containerGroup}>
                             <div className={styles.containerItem}>
-                                <InputCheck text="grandes contribuyentes" register={register} options={{ required: false }} name="grandescontribuyentes" />
+                                <InputCheck text=" Exogena grandes contribuyentes" register={register} options={{ required: false }} name="grandescontribuyentes" />
                             </div>
                             <div className={styles.containerItem}>
-                                <InputCheck text="Personas juridicas o naturales" register={register} options={{ required: false }} name="personasjuridicasonaturales" />
+                                <InputCheck text="Exogena Personas juridicas o naturales" register={register} options={{ required: false }} name="personasjuridicasonaturales" />
                             </div>
                         </div>
                     }

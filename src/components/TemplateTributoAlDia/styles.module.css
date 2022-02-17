@@ -6,8 +6,9 @@
 }
 .containerHeader {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 25px;
+    width: 100%;
 }
 .containerLogo {
     width: 50px;
@@ -18,9 +19,24 @@
     width: 100%;
 }
 .title {
-    font-size: 1.4em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
 }
 .titleItem {
     font-weight: bold;
     margin-top: 30px;
+}
+.containerDates {
+    margin-top: 50px;
+    padding: 0 30px;
+}
+.containerNotification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.select {
+    margin: 0 5px ; 
 }

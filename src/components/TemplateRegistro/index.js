@@ -79,17 +79,17 @@ const TemplateRegistro = () => {
                         <InputCheck text="Retencion de la fuente" register={register} options={{ required: false }} name="retenciondelafuente" />
                     </div>
                     <div className={styles.containerItem}>
-                        <InputCheck text="Responsable de IVA" register={register} options={{ required: false }} name="responsableiva" />
+                        <InputCheck text="Responsable de IVA" register={register} options={{ required: false }} name="responsableivaPrincipal" />
                     </div>
                     {responsableiva &&
                         <div className={styles.containerGroup}>
                             <div className={styles.containerItem}>
-                                {/* <InputCheck text="Responsable de IVA bimestral" register={register} options={{ required: false }} name="responsableivabimestral" /> */}
+                                
                                 <InputRadio text="Responsable de IVA bimestral" register={register} options={{ required: "Campo requerido" }} name="responsableiva" value="responsableivabimestral" error={errors.responsableiva} />
 
                             </div>
                             <div className={styles.containerItem}>
-                                {/* <InputCheck text="Responsable de IVA cuatrimestral" register={register} options={{ required: false }} name="responsableivacuatrimestral" /> */}
+                                
                                 <InputRadio text="Responsable de IVA cuatrimestra" register={register} options={{ required: "Campo requerido" }} name="responsableiva" value="responsableivacuatrimestral" error={errors.responsableiva} />
 
                             </div>
@@ -118,10 +118,14 @@ const TemplateRegistro = () => {
                     {exogena &&
                         <div className={styles.containerGroup}>
                             <div className={styles.containerItem}>
-                                <InputCheck text=" Exogena grandes contribuyentes" register={register} options={{ required: false }} name="grandescontribuyentes" />
+                                {/* <InputCheck text="Exogena grandes contribuyentes" register={register} options={{ required: false }} name="grandescontribuyentes" /> */}
+                                <InputRadio text="Exogena grandes contribuyentes" register={register} options={{ required: "Campo requerido" }} name="tipoexogena" value="exogenagrandescontribuyentes" error={errors.tipoexogena} />
+
                             </div>
                             <div className={styles.containerItem}>
-                                <InputCheck text="Exogena Personas juridicas o naturales" register={register} options={{ required: false }} name="personasjuridicasonaturales" />
+                                {/* <InputCheck text="Exogena Personas juridicas o naturales" register={register} options={{ required: false }} name="personasjuridicasonaturales" /> */}
+                                <InputRadio text="Exogena Personas juridicas o naturales" register={register} options={{ required: "Campo requerido" }} name="tipoexogena" value="exogenajuridicasonaturales" error={errors.tipoexogena} />
+
                             </div>
                         </div>
                     }

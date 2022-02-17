@@ -11,7 +11,7 @@ import styles from './styles.module.css'
 const TemplateRegistro = () => {
     const [data, setData] = useState();
     const { register, handleSubmit, watch,  formState: { errors }} = useForm();
-    const [tiporegimen, responsableiva, exogena] = watch(["tiporegimen", "responsableiva", "exogena" ]);
+    const [tiporegimen, responsableivaPrincipal, exogena] = watch(["tiporegimen", "responsableivaPrincipal", "exogena" ]);
 
     const router = useRouter();
     const onSubmit = (data) => {
@@ -81,17 +81,13 @@ const TemplateRegistro = () => {
                     <div className={styles.containerItem}>
                         <InputCheck text="Responsable de IVA" register={register} options={{ required: false }} name="responsableivaPrincipal" />
                     </div>
-                    {responsableiva &&
+                    {responsableivaPrincipal &&
                         <div className={styles.containerGroup}>
                             <div className={styles.containerItem}>
-                                
                                 <InputRadio text="Responsable de IVA bimestral" register={register} options={{ required: "Campo requerido" }} name="responsableiva" value="responsableivabimestral" error={errors.responsableiva} />
-
                             </div>
                             <div className={styles.containerItem}>
-                                
                                 <InputRadio text="Responsable de IVA cuatrimestra" register={register} options={{ required: "Campo requerido" }} name="responsableiva" value="responsableivacuatrimestral" error={errors.responsableiva} />
-
                             </div>
                         </div>
                     }

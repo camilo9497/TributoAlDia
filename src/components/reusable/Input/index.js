@@ -4,8 +4,8 @@ const Input = ({text, type, placeholder, register = ()=> ({}), name, options = {
 
     return (
         <div className={styles.containerInput}>
-            <label  className={styles.label} for="name">{text}</label>
-            <input {...register(name, options)}  className={styles.input} type={type}   placeholder={placeholder} ></input>
+            <label className={styles.label} htmlFor={name}>{text}</label>
+            <input {...register(name, options)}  className={styles.input} type={type} placeholder={placeholder} ></input>
             {error?.message && 
             <p className={styles.error}>{error.message}</p>
             }

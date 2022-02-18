@@ -54,10 +54,10 @@ const TemplateRegistro = () => {
                 </div>
                 <div className={styles.containerTypePerson}>
                     <div className={styles.containerItem}>
-                        <InputRadio text="Persona juridica" register={register} options={{ required: "Campo requerido" }} name="tipopersona" value="personaJuridica" text="Persona Juridica"  error={errors.tipopersona} />
+                        <InputRadio text="Persona juridica" register={register} options={{ required: "Campo requerido" }} name="tipopersona" value="personaJuridica" error={errors.tipopersona} />
                     </div>
                     <div className={styles.containerItem}>
-                        <InputRadio text="Persona natural" register={register} options={{ required: "Campo requerido"}} name="tipopersona" value="personaNatural" text="Persona Natural" error={errors.tipopersona} />
+                        <InputRadio text="Persona natural" register={register} options={{ required: "Campo requerido"}} name="tipopersona" value="personaNatural" error={errors.tipopersona} />
                     </div>
                 </div>
                 <div className={styles.containerItem}>

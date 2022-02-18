@@ -1,0 +1,9 @@
+<!-- Aquí puedes escribir tu comentario en html --> 
+/* Aquí puedes escribir tu comentario css */
+// Aquí puedes escribir tu comentario JavaScript
+/* 
+Comentarios en JavaScript
+Autor: Caronte Web Studio
+*/
+# Aquí puedes escribir tu comentario en lenguaje python
+print "Texto que imprime la sentencia print" # Aquí escribimos el comentario

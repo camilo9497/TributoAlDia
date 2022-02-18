@@ -116,8 +116,8 @@ const TemplateTributoAlDia = () => {
                     <p>Notificar con</p>
                     <select className={styles.select} name="select">
                         <option value="1">1</option>
-                        <option value="5" selected>5</option>
-                        <option value="9">9</option>
+                        <option value="3" selected>3</option>
+                        <option value="8">8</option>
                     </select>
                     <p>dias de anterioridad</p>
                 </div>

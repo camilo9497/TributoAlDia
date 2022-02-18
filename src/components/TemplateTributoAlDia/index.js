@@ -45,7 +45,7 @@ const TemplateTributoAlDia = () => {
             tipoPersona = obtenerFecha(juridica, ultimosDosDigitos);
             setTipoPersonaS("juridica")
         }
-        if (registro.tiporegimen === "granContributyente") {
+        if (registro.tiporegimen === "granContribuyente") {
             granContribuyente = obtenerFecha(granContribuyenteF, ultimoDigito);
         }
         if (registro.responsableiva === "responsableivabimestral") {
@@ -78,7 +78,7 @@ const TemplateTributoAlDia = () => {
             retencionEnLaFuente = obtenerFecha(retencionFuente, ultimoDigito);
         }
 
-        return { tipoPersona, granContribuyente, responsableIva, declaracionAnualConsolidada, declaracionAnualConsolidadaDeIva, anticipoBimestral, tipoExogena }
+        return { tipoPersona, granContribuyente, responsableIva, declaracionAnualConsolidada, declaracionAnualConsolidadaDeIva, anticipoBimestral, tipoExogena, impoconsumo, retencionEnLaFuente}
     }, [registro, ultimoDigito, ultimosDosDigitos])
 
     return (
@@ -102,11 +102,11 @@ const TemplateTributoAlDia = () => {
                 <ItemTable text="Cuatrimestral" value="<$3.275.844.000" />
                 <div className={styles.containerDates}>
                     {dates?.tipoPersona && <p>Fecha declaracion persona {tipoPersonaS} <strong>{dates?.tipoPersona}</strong> </p>}
-                    {dates?.granContribuyente && <p>Fecha declaracion persona gran contribuyent <strong>{dates?.granContribuyente}</strong></p>}
+                    {dates?.granContribuyente && <p>Fecha declaracion persona gran contribuyente <strong>{dates?.granContribuyente}</strong></p>}
                     {dates?.responsableIva && <p>Fecha declaracion persona {responsableIvaS} <strong>{dates?.responsableIva} </strong></p>}
-                    {dates?.declaracionanualconsolidada && <p>Fecha declaracion persona anual consolidada (rst)  <strong>{dates?.declaracionanualconsolidada} </strong></p>}
+                    {dates?.declaracionAnualConsolidada && <p>Fecha declaracion persona anual consolidada (rst)  <strong>{dates?.declaracionAnualConsolidada} </strong></p>}
                     {dates?.declaracionAnualConsolidadaDeIva && <p>Fecha declaracion persona anual consolidada de IVA (rst) <strong>{dates?.declaracionAnualConsolidadaDeIva} </strong></p>}
-                    {dates?.anticipobimestral && <p>Fecha declaracion persona anticipo bimestral (rst) <strong>{dates?.anticipobimestral} </strong></p>}
+                    {dates?.anticipoBimestral && <p>Fecha declaracion persona anticipo bimestral (rst) <strong>{dates?.anticipoBimestral} </strong></p>}
                     {dates?.tipoExogena && <p>Fecha declaracion {tipoExogenaS} <strong>{dates?.tipoExogena} </strong></p>}
                     {dates?.impoconsumo && <p>Fecha declaracion consumo <strong>{dates?.impoconsumo} </strong></p>}
                     {dates?.retencionEnLaFuente && <p>Fecha declaracion retencion en la fuente <strong>{dates?.retencionEnLaFuente} </strong></p>}
@@ -120,9 +120,7 @@ const TemplateTributoAlDia = () => {
                     </select>
                     <p>dias de anterioridad</p>
                 </div>
-
                 <Button text="Finalizar" handleClick={handleClickClose} />
-
             </div>
         </div>
     )

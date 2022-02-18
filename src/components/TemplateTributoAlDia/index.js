@@ -29,7 +29,8 @@ const TemplateTributoAlDia = () => {
         const result = fechas.find((item) => item.id === id);
         if (!result) return null;
 
-        const date = new Date(2022, result.mes, result.dia);
+        const date = new Date(2022, result.mes - 1, result.dia);
+        console.log('cual mes esta dando', result.mes);
         return new Intl.DateTimeFormat('es-CO', { year: 'numeric', month: 'long', day: 'numeric' }).format(date);
     }
 
@@ -101,14 +102,14 @@ const TemplateTributoAlDia = () => {
                 <ItemTable text="Bimestral" value=">$327.584.400" />
                 <ItemTable text="Cuatrimestral" value="<$3.275.844.000" />
                 <div className={styles.containerDates}>
-                    {dates?.tipoPersona && <p>Fecha declaracion persona {tipoPersonaS} <strong>{dates?.tipoPersona}</strong> </p>}
+                    {dates?.tipoPersona && <p>Fecha de declaracion renta <strong>{dates?.tipoPersona}</strong> </p>}
                     {dates?.granContribuyente && <p>Fecha declaracion persona gran contribuyente <strong>{dates?.granContribuyente}</strong></p>}
-                    {dates?.responsableIva && <p>Fecha declaracion persona {responsableIvaS} <strong>{dates?.responsableIva} </strong></p>}
+                    {dates?.responsableIva && <p>Fecha declaracion persona de {responsableIvaS} <strong>{dates?.responsableIva} </strong></p>}
                     {dates?.declaracionAnualConsolidada && <p>Fecha declaracion persona anual consolidada (rst)  <strong>{dates?.declaracionAnualConsolidada} </strong></p>}
                     {dates?.declaracionAnualConsolidadaDeIva && <p>Fecha declaracion persona anual consolidada de IVA (rst) <strong>{dates?.declaracionAnualConsolidadaDeIva} </strong></p>}
                     {dates?.anticipoBimestral && <p>Fecha declaracion persona anticipo bimestral (rst) <strong>{dates?.anticipoBimestral} </strong></p>}
                     {dates?.tipoExogena && <p>Fecha declaracion {tipoExogenaS} <strong>{dates?.tipoExogena} </strong></p>}
-                    {dates?.impoconsumo && <p>Fecha declaracion consumo <strong>{dates?.impoconsumo} </strong></p>}
+                    {dates?.impoconsumo && <p>Fecha declaracion de inpoconsumo <strong>{dates?.impoconsumo} </strong></p>}
                     {dates?.retencionEnLaFuente && <p>Fecha declaracion retencion en la fuente <strong>{dates?.retencionEnLaFuente} </strong></p>}
                 </div>
                 <div className={styles.containerNotification}>

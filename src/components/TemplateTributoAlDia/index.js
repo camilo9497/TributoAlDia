@@ -92,14 +92,14 @@ const TemplateTributoAlDia = () => {
             </div>
             <div>
                 <ItemTable text="UVT" value="$38.004" />
-                <ItemTable text="SMIN" value="$380.000" />
+                <ItemTable text="SANCIÓN MÍNIMA" value="$380.000" />
                 <ItemTable text="SMMLV" value="$1.000.000" />
                 <ItemTable text="Salario minimo integral" value="$13.000.000" />
                 <ItemTable text="Auxilio de transporte" value="$117.172" />
                 <ItemTable text="Base de retención por servicio" value="$152.000" />
                 <ItemTable text="Base de retención por compras" value="$1.026.000" />
                 <p className={styles.titleItem}>Ingresos brutos por declarar IVA</p>
-                <ItemTable text="Bimestral" value=">$327.584.400" />
+                <ItemTable text="Bimestral" value=">$3.275.844.000" />
                 <ItemTable text="Cuatrimestral" value="<$3.275.844.000" />
                 <div className={styles.containerDates}>
                     {dates?.tipoPersona && <p>Fecha de declaracion renta <strong>{dates?.tipoPersona}</strong> </p>}

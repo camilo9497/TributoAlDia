@@ -6,14 +6,16 @@
 }
 .containerHeader {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 25px;
     width: 100%;
+    margin-top: 15px;
 }
 .containerLogo {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+    width: 80px;
+    height: 80px;
 }
 .imgLogo {
     width: 100%;
@@ -40,4 +42,14 @@
 }
 .select {
     margin: 0 5px ; 
+}
+.link {
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }

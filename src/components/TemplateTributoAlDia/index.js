@@ -91,6 +91,8 @@ const TemplateTributoAlDia = () => {
                 <h1 className={styles.title}>Mi tributo al dia</h1>
             </div>
             <div>
+            <h1 className={styles.title}>https://www.dian.gov.co/Calendarios/Calendario_Tributario_2022.pdf</h1>
+            
                 <ItemTable text="UVT" value="$38.004" />
                 <ItemTable text="SANCIÓN MÍNIMA" value="$380.000" />
                 <ItemTable text="SMMLV" value="$1.000.000" />
@@ -102,6 +104,8 @@ const TemplateTributoAlDia = () => {
                 <ItemTable text="Bimestral" value=">$3.275.844.000" />
                 <ItemTable text="Cuatrimestral" value="<$3.275.844.000" />
                 <div className={styles.containerDates}>
+
+                    <h1 className={styles.title}>FECHAS LÍMITES DE PRESENTACIÓN </h1>
                     {dates?.tipoPersona && <p>Fecha de declaracion renta <strong>{dates?.tipoPersona}</strong> </p>}
                     {dates?.granContribuyente && <p>Fecha declaracion persona gran contribuyente <strong>{dates?.granContribuyente}</strong></p>}
                     {dates?.responsableIva && <p>Fecha declaracion persona de {responsableIvaS} <strong>{dates?.responsableIva} </strong></p>}

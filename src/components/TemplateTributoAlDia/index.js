@@ -91,7 +91,7 @@ const TemplateTributoAlDia = () => {
                 <h1 className={styles.title}>Mi tributo al dia</h1>
             </div>
             <div>
-            <a className={styles.link} href="https://www.dian.gov.co/Calendarios/Calendario_Tributario_2022.pdf" rel="noopener" target="_blank">Calendario tributario 2022</a>
+            <a className={styles.link} href="https://www.dian.gov.co/Calendarios/Calendario_Tributario_2022.pdf">Calendario tributario 2022</a>
             
                 <ItemTable text="UVT" value="$38.004" />
                 <ItemTable text="SANCIÓN MÍNIMA" value="$380.000" />

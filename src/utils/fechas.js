@@ -2,36 +2,6 @@
 export const ivaBimestral =
     [
         {
-            id: "1", dia: 8, mes: 3
-        },
-        {
-            id: "2", dia: 9, mes: 3
-        },
-        {
-            id: "3", dia: 10, mes: 3
-        },
-        {
-            id: "4", dia: 11, mes: 3
-        },
-        {
-            id: "5", dia: 14, mes: 3
-        },
-        {
-            id: "6", dia: 15, mes: 3
-        },
-        {
-            id: "7", dia: 16, mes: 3
-        },
-        {
-            id: "8", dia: 17, mes: 3
-        },
-        {
-            id: "9", dia: 18, mes: 3
-        },
-        {
-            id: "0", dia: 22, mes: 3
-        },
-        {
             id: "1", dia: 10, mes: 5
         },
         {
@@ -61,7 +31,6 @@ export const ivaBimestral =
         {
             id: "0", dia: 23, mes: 5
         },
-
     ]
 
 export const granContribuyenteF =
@@ -1148,36 +1117,6 @@ export const consumo =
 export const retencionFuente =
     [
         {
-            id: "1", dia: 8, mes: 3
-        },
-        {
-            id: "2", dia: 9, mes: 3
-        },
-        {
-            id: "3", dia: 10, mes: 3
-        },
-        {
-            id: "4", dia: 11, mes: 3
-        },
-        {
-            id: "5", dia: 14, mes: 3
-        },
-        {
-            id: "6", dia: 15, mes: 3
-        },
-        {
-            id: "7", dia: 16, mes: 3
-        },
-        {
-            id: "8", dia: 17, mes: 3
-        },
-        {
-            id: "9", dia: 18, mes: 3
-        },
-        {
-            id: "0", dia: 22, mes: 3
-        },
-        {
             id: "1", dia: 7, mes: 4
         },
         {
@@ -1207,7 +1146,6 @@ export const retencionFuente =
         {
             id: "0", dia: 22, mes: 4
         },
-
     ]
 
 export const rstDeclaracionAnualConsolidad =

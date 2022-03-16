@@ -64,7 +64,7 @@ const TemplateRegistro = () => {
                     <InputRadio text="Regimen responsable" register={register} options={{ required: "Campo requerido" }} name="tiporegimen" value="regimenResponsable" error={errors.tiporegimen}  />
                 </div>
                 <div className={styles.containerItem}>
-                    <InputRadio text="Regimen no responsable" register={register} options={{ required: "Campo requerido" }} name="tiporegimen" value="regimenResponsable" error={errors.tiporegimen}  />
+                    <InputRadio text="Regimen no responsable" register={register} options={{ required: "Campo requerido" }} name="tiporegimen" value="regimenNoResponsable" error={errors.tiporegimen}  />
                 </div>
                 <div className={styles.containerItem}>
                     <InputRadio text="Gran contribuyente" register={register} options={{ required: "Campo requerido" }} name="tiporegimen" value="granContribuyente" error={errors.tiporegimen} />
